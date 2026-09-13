@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --font-cinzel: 'Cinzel', serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-brand-black: #0b0c0e;
+  --color-brand-charcoal: #141618;
+  --color-brand-card: #181a1d;
+  --color-brand-gold: #c8a97e;
+  --color-brand-gold-light: #e6d3b4;
+  --color-brand-gold-dark: #8c724f;
+  --color-brand-cream: #f4efe6;
+  --color-brand-smoke: #9e9b94;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0c0e;
+    color: #e5e1d8;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-cinzel);
+    letter-spacing: 0.05em;
+  }
+
+  .font-editorial {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0c0e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b2823;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c8a97e;
+}
+
+/* Glassmorphism & metallic accents */
+.luxury-glass {
+  background: rgba(18, 20, 23, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(200, 169, 126, 0.15);
+}
+
+.luxury-glass-hover {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.luxury-glass-hover:hover {
+  background: rgba(24, 27, 31, 0.85);
+  border-color: rgba(200, 169, 126, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 25px -5px rgba(200, 169, 126, 0.12);
+}
+
+.gold-glow {
+  box-shadow: 0 0 35px -5px rgba(200, 169, 126, 0.25);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f7ebd7 0%, #c8a97e 50%, #9e7f53 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

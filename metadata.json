@@ -1,0 +1,6 @@
+{
+  "name": "Corridor seven - Haute Parfumerie",
+  "description": "An international luxury perfume house crafting artisanal fragrances and signature olfactory silhouettes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
