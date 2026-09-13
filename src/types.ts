@@ -35,6 +35,6 @@ export interface CartItem {
 }
 
 export interface WhatsAppConfig {
-  phoneNumber: string; // e.g., '919876543210'
+  phoneNumber: string; // e.g., '918080695405'
   displayNumber: string;
 }

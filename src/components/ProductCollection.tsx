@@ -54,10 +54,16 @@ export const ProductCollection: React.FC<ProductCollectionProps> = ({
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        {/* Section Header with Scroll Motion */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="text-center max-w-3xl mx-auto mb-16"
+        >
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#181a1d] border border-[#c8a97e]/20 text-[11px] tracking-[0.25em] text-[#c8a97e] uppercase mb-4">
-            <Sparkles className="w-3.5 h-3.5" />
+            <Sparkles className="w-3.5 h-3.5 animate-pulse" />
             <span>The Permanent Collection</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-light tracking-[0.05em] text-[#f4efe6] mb-4">
@@ -67,7 +73,7 @@ export const ProductCollection: React.FC<ProductCollectionProps> = ({
             Every bottle is an architectural formulation of high-concentration perfume oils, 
             macerated to perfection and bottled in weighted smoked glass.
           </p>
-        </div>
+        </motion.div>
 
         {/* Filter & Sorting Controls */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-10 border-b border-white/10 mb-12">

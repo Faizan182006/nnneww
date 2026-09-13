@@ -1,7 +1,7 @@
 import { Fragrance, CartItem } from '../types';
 
-export const DEFAULT_WHATSAPP_NUMBER = '919876543210';
-export const DISPLAY_WHATSAPP_NUMBER = '+91 98765 43210';
+export const DEFAULT_WHATSAPP_NUMBER = '918080695405';
+export const DISPLAY_WHATSAPP_NUMBER = '+91 80806 95405';
 
 /**
  * Format price in Indian Rupee format (e.g. ₹2,499)

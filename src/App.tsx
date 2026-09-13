@@ -10,6 +10,7 @@ import { OlfactoryBagDrawer } from './components/OlfactoryBagDrawer';
 import { SearchModal } from './components/SearchModal';
 import { FragranceQuizModal } from './components/FragranceQuizModal';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
+import { MotionAtmosphere } from './components/MotionAtmosphere';
 import { Footer } from './components/Footer';
 
 export default function App() {
@@ -91,6 +92,9 @@ export default function App() {
   return (
     <div id="app-root" className="min-h-screen bg-[#0b0c0e] text-[#e5e1d8] flex flex-col font-sans selection:bg-[#c8a97e] selection:text-[#0b0c0e]">
       
+      {/* Dynamic Motion Graphics Atmosphere (Scroll Progress, Cursor Aura & Ambient Drifting Sparks) */}
+      <MotionAtmosphere />
+
       {/* Top Floating Glassmorphic Navigation */}
       <Navbar
         cartCount={totalCartCount}
